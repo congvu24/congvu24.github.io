@@ -5,6 +5,7 @@
     }
     header .header-content{
         width:100%;
+        padding: 0 10px;
     }
     .header-content .header-grid{
         width: 100%;
@@ -66,7 +67,7 @@
         /* text-align: center; */
         position: relative;
         width: 100%;
-        padding-left: 50px;
+        /* padding-left: 50px; */
     }
     .header-about div div{
         width: 100%;
@@ -79,11 +80,11 @@
     .header-about li{
         font-size: var(--primary_size);
         display: block;
-        margin: -4px 20px;
-        height: 40px;
-        line-height: 40px;
+        /* margin: -4px 20px; */
+        /* height: 40px; */
+        /* line-height: 40px; */
         font-size: 20px;
-        font-weight: 100;
+        /* font-weight: 100; */
     }
     .small-social{
         width: 100%;
