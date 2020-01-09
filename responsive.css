@@ -1,0 +1,116 @@
+
+@media only screen and (max-width: 1200px) {
+    header .header-content{
+        width:100%;
+    }
+    .header-content .header-grid{
+        width: 100%;
+        float: left;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        margin: 20px 0;
+        font-size: 30px;
+        position: relative;
+        justify-content: center;
+    }
+    .header-content .nav-wrap{
+        border-bottom: 4px solid white;
+        justify-content: center;
+    }
+    .nav-wrap ul{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+    .nav-wrap ul li{
+        display: block;
+        /* height: 66px; */
+        width: 203px;
+        text-align: center;
+        line-height: 66px;
+    }
+    .nav-wrap ul .active{
+        background-color: var(--active_color);
+    }
+    .header-bigimg .bigimg{
+        display: block;
+        width: 87%;
+        position: absolute;
+        top: -50px;
+        right: -75px;
+        display: none;
+    }
+    .header-about {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+    }
+    .header-bigimg{
+        height: 500px;
+        display: none;
+    }
+    .header-about div {
+        /* text-align: center; */
+        position: relative;
+        width: 100%;
+        padding-left: 50px;
+    }
+    .header-about div div{
+        width: 100%;
+    }
+    .header-about h2{
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .header-about li{
+        font-size: var(--primary_size);
+        display: block;
+        margin: -4px 20px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .small-social{
+        width: 100%;
+    }
+    .small-social li{
+        display: inline-block;
+        margin: 0 0px;
+    }
+    .primary-button{
+        padding:12px 24px;
+        background-color: var(--danger_color);;
+        border: none;
+        font-size: var(--small_size);
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .primary-button:hover{
+        background-color: var(--active_color);;
+        color: #0E0C38;
+    }
+    .small-link{
+        color: var(--small_color);
+        font-size: var(--small_size);
+        cursor: pointer;
+        transition: all 0.5s ease;
+    }
+    .small-link:hover{
+        color: white;
+    }
+    .hasUnderline{
+        display: inline-block;
+        border-bottom: 2px solid var(--small_color);
+        transition: all 0.5s ease;
+    }
+    .hasUnderline:hover{
+        border-color: white;
+    }
+  }
