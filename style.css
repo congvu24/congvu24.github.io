@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     color:white;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
     list-style-type: none;
     --primary_color: #0E0C38;
     --primary_size: 40px;
@@ -13,6 +14,9 @@
     --active_color: #63B8F8;
     
 }
+html {
+    scroll-behavior: smooth;
+  }
 a{
     text-decoration: none;
 }
@@ -21,10 +25,11 @@ body{
     height: 100%;
     background-color: var(--primary_color);
     overflow-x: hidden;
-    padding: 0 100px;
+
 }
 header .header-content{
     width:100%;
+    padding: 0 100px;
 }
 .header-content .header-grid{
     width: 50%;
@@ -95,7 +100,7 @@ header .header-content{
 }
 .small-social li{
     display: inline-block;
-    margin: 0 0px;
+    margin: 18px 18px;
 }
 .primary-button{
     padding:12px 24px;
@@ -119,6 +124,30 @@ header .header-content{
 .small-link:hover{
     color: white;
 }
+.small-social li a{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.small-social li a:hover{
+    transform: scale(1.1);
+    background-color: var(--danger_color);
+}
+.small-social li a:hover > i{
+    color:white
+}
+.small-social li a i{
+    color: black;
+    font-size: 20px;
+}
 .hasUnderline{
     display: inline-block;
     border-bottom: 2px solid var(--small_color);
@@ -126,4 +155,174 @@ header .header-content{
 }
 .hasUnderline:hover{
     border-color: white;
+}
+/* ================== */
+.portfolio {
+    position: relative;
+    width: 100%;
+}
+
+.field-title {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+.underline {
+    display: inline-block;
+    width: 50%;
+    height: 5px;
+    background: white;
+    margin-top: 10px;
+}
+.profile-image {width: 35%;margin-right: 50px;}
+
+.profile {display: flex;margin: 50px 165px;}
+
+.profile-image img {
+    width: 100%;
+}
+
+.profile-text p {
+    font-size: var(--primary_size);
+}
+
+/* ========================== */
+
+.porfolio-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 50px
+
+}
+.profolio-field button{
+    margin:auto;
+    display: none;
+}
+.portfolio-box {
+    width: 400px;
+    position: relative;
+    height: 400px;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.portfolio-box:hover{
+    transform: scale(1.10);
+}
+
+.portfolio-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.portfolio-text {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+}
+
+h4.demo-text {
+    font-weight: 100;
+}
+
+p.medum-text {
+    font-size: var(--small_size);
+    color: var(--small_color);
+}
+
+p.small-text {
+    font-size: var(--small_size);
+    color: var(--small_color);
+    transition: all 0.5s ease;
+}
+.small-text:hover{
+    color: white;
+}
+.showmore{display: block}
+/* =================== */
+.contact-content{
+    width: 50%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+
+}
+.contact-box{
+    width:100px;
+    height: 100px;
+    margin: 0 20px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.contact-box:hover{
+    transform: scale(1.3);
+}
+.contact-box img{
+    width: 100%;
+}
+
+/* ===================== */
+footer{
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+footer img{
+    width: 10%;
+}
+footer div a{
+    display: inline-block;
+}
+footer div {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto
+}
+.vertical-line{
+    display: inline-block;
+    width:2px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+}
+footer p{
+    line-height: 30px;
+    font-size: var(--small_size);
+}
+.scroll-top{
+    display: none;
+    width:50px;
+    height: 50px;
+    background-color: green;
+    position: fixed;
+    right:0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+.scroll-top:hover{
+    opacity: 1;
+}
+.show{
+    display: flex;
+    transition: all 0.5s ease;
+    
 }

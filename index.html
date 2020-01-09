@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a551d42fb3.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <title>My Portfolio</title>
 </head>
@@ -22,24 +24,24 @@
             <div class="nav-wrap header-grid wow bounceInRight">
                 <ul class="wow bounceInRight">
                     <li class="active">
-                        <a href="#">
+                        <a href="#about">
                             About
                         </a>
                     </li>
                     <li class="">
-                        <a href="#">
+                        <a href="#portfolio">
                             Portfolio
                         </a>
                     </li>
                     <li class="">
-                        <a href="#">
+                        <a href="#contact">
                             Contact
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="header-about">
-                <div >
+                <div class="header-text">
                     <h2 class="wow fadeInUp">
                         FrontEnd Developer
                     </h2>
@@ -69,17 +71,17 @@
                         <ul class="small-social wow fadeInUp">
                             <li>
                                 <a href="#">
-                                    <img src="img/Group 3.png" />
+                                    <i class="fab fa-facebook-f"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="img/Group 3.png" />
+                                    <i class="fab fa-youtube"></i>
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="img/Group 3.png" />
+                                    <i class="fab fa-github"></i>
                                 </a>
                             </li>
                         </ul>
@@ -97,8 +99,140 @@
         </div>
     </header>
     <main>
-        add
+        <div class="profile-field" id="profile">
+            <div class="field-title wow bounceInUp">
+                <h1 class="field-title-h1">My Profile</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="profile">
+                <div class="profile-image wow bounceInUp">
+                    <img src="./img/Công Vũ.png.png" alt="">
+                </div>
+                <br>
+                <div class="profile-text wow bounceInUp">
+                    <p>Fullname: Duong Cong Vu</p>
+                    <p>Age: 18</p>
+                    <p>Job: Student</p>
+                    <p>School: University of Information</p>
+                    <p>Language: Vietnamese/English</p>
+                    <p>Position: Frontend Developer </p>
+                    <p>Experience: Fresher</p>
+                    <p>Company: Freelancaer</p>
+                    <p>Develop skills: Reactjs, HTML, CSS,</p>
+                    <p>Nodejs, Mongodb, Firebase</p>
+                    <p>Softskills: Team working, analytics... </p>
+                </div>
+            </div>
+        </div>
+        <div class="profolio-field" id="portfolio">
+            <div class="field-title wow bounceInUp">
+                <h1 class="field-title-h1">My Portfolio</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="porfolio-content">
+                <div class="portfolio-box wow fadeInUp" data-wow-delay="0.5s">
+                    <img src="/img/Công Vũ.png.png" alt="">
+                    <div class="portfolio-cover"></div>
+                    <div class="portfolio-text">
+                        <h3 class="title-text">San pham 1</h3>
+                        <a href="#"><h4 class="demo-text">Demo</h4></a>
+                        <p class="medum-text">Nodejs, Reactjs, Mongodb,...</p>
+                        <p class="small-text">view on github</p>
+                    </div>
+                </div>
+                <div class="portfolio-box wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="/img/Công Vũ.png.png" alt="">
+                    <div class="portfolio-cover"></div>
+                    <div class="portfolio-text">
+                        <h3 class="title-text">San pham 1</h3>
+                        <a href="#"><h4 class="demo-text">Demo</h4></a>
+                        <p class="medum-text">Nodejs, Reactjs, Mongodb,...</p>
+                        <p class="small-text">view on github</p>
+                    </div>
+                </div>
+                <div class="portfolio-box wow fadeInUp" data-wow-delay="0.7s">
+                    <img src="/img/Công Vũ.png.png" alt="">
+                    <div class="portfolio-cover"></div>
+                    <div class="portfolio-text">
+                        <h3 class="title-text">San pham 1</h3>
+                        <a href="#"><h4 class="demo-text">Demo</h4></a>
+                        <p class="medum-text">Nodejs, Reactjs, Mongodb,...</p>
+                        <p class="small-text">view on github</p>
+                    </div>
+                </div>
+            </div>
+            <div class="porfolio-content">
+                <div class="portfolio-box wow fadeInUp" data-wow-delay="0.5s">
+                    <img src="/img/Công Vũ.png.png" alt="">
+                    <div class="portfolio-cover"></div>
+                    <div class="portfolio-text">
+                        <h3 class="title-text">San pham 1</h3>
+                        <h4 class="demo-text">Demo</h4>
+                        <p class="medum-text">Nodejs, Reactjs, Mongodb,...</p>
+                        <a href="#"><p class="small-text">view on github</p></a>
+                    </div>
+                </div>
+                <div class="portfolio-box wow fadeInUp" data-wow-delay="0.6s">
+                    <img src="/img/Công Vũ.png.png" alt="">
+                    <div class="portfolio-cover"></div>
+                    <div class="portfolio-text">
+                        <h3 class="title-text">San pham 1</h3>
+                        <h4 class="demo-text">Demo</h4>
+                        <p class="medum-text">Nodejs, Reactjs, Mongodb,...</p>
+                        <a href="#"><p class="small-text">view on github</p></a>
+                    </div>
+                </div>
+                <div class="portfolio-box wow fadeInUp" data-wow-delay="0.7s">
+                    <img src="/img/Công Vũ.png.png" alt="">
+                    <div class="portfolio-cover"></div>
+                    <div class="portfolio-text">
+                        <h3 class="title-text">San pham 1</h3>
+                        <h4 class="demo-text">Demo</h4>
+                        <p class="medum-text">Nodejs, Reactjs, Mongodb,...</p>
+                        <a href="#"><p class="small-text">view on github</p></a>
+                    </div>
+                </div>
+            </div>
+            <button class="primary-button showmore">
+                Show more
+            </button>
+        </div>  
+        <div class="contact-field" id="contact">
+            <div class="field-title wow bounceInUp">
+                <h1 class="field-title-h1">Contact me</h1>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-box">
+                    <a href="#"><img src="./img/Group 35.png" alt=""></a>
+                </div>
+                <div class="contact-box">
+                    <a href="#"><img src="./img/Group 57.png" alt=""></a>
+                </div>
+                <div class="contact-box">
+                    <a href="#"><img src="./img/Group 58.png" alt=""></a>
+                </div>
+                <div class="contact-box"></a>
+                    <a href="#"><img src="./img/Group 34.png" alt=""></a>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <img src="./img/Duong Cong  Vu.png">
+        <div>
+            <a href="#">Portfolio</a>
+            <div class="vertical-line"></div>
+            <a href="#">About</a>
+            <div class="vertical-line"></div>
+            <a href="#">Contact</a>
+        </div>
+        <p>NY / +1 12 3456 7890 / hello@graphics.studio.com</p>
+        <p>Copyright © 2019 Graphics Studio | All rights reserved</p>
+    </footer>
+    <div class="scroll-top">
+        <i class="far fa-arrow-alt-circle-up"></i>
+    </div>
 </body>
 <script src="./wow.min.js"></script>
 <script>

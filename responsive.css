@@ -1,5 +1,8 @@
 
 @media only screen and (max-width: 1200px) {
+    body{
+        padding: 0 0;
+    }
     header .header-content{
         width:100%;
     }
@@ -9,10 +12,13 @@
         height: 90px;
         display: flex;
         align-items: center;
-        margin: 20px 0;
+        margin: 16px 0;
         font-size: 30px;
         position: relative;
         justify-content: center;
+    }
+    img.logo {
+        width: 100%;
     }
     .header-content .nav-wrap{
         border-bottom: 4px solid white;
@@ -24,11 +30,14 @@
         width: 90%;
     }
     .nav-wrap ul li{
-        display: block;
-        /* height: 66px; */
-        width: 203px;
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
         text-align: center;
-        line-height: 66px;
+    }
+    .nav-wrap ul li a{
+        font-size: 20px;
     }
     .nav-wrap ul .active{
         background-color: var(--active_color);
@@ -53,7 +62,7 @@
         height: 500px;
         display: none;
     }
-    .header-about div {
+    .header-about .header-text {
         /* text-align: center; */
         position: relative;
         width: 100%;
@@ -81,8 +90,9 @@
     }
     .small-social li{
         display: inline-block;
-        margin: 0 0px;
+        margin: 18px 18px;
     }
+    
     .primary-button{
         padding:12px 24px;
         background-color: var(--danger_color);;
@@ -113,4 +123,89 @@
     .hasUnderline:hover{
         border-color: white;
     }
-  }
+    .profile-image {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    .profile {
+        margin: 50px 0;
+        display: block;    
+    }
+
+    .profile-image img {
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+    .profile-text{
+        margin: 20px;
+    }
+    .profile-text p {
+        font-size: 25px;
+        text-align: center;
+        line-height: 40px;
+    }
+    .field-title{
+        margin: 50px 0 10px 0;
+    }
+    .field-title h1{
+        font-size: 30px;
+    }
+    .porfolio-content{
+        display: block;
+        width: 100%;
+    }
+    .portfolio-box {
+        width: 200px;
+        position: relative;
+        height: 200px;
+        margin:20px auto
+    }
+    .portfolio-text {
+        height: 100px;
+        position: absolute;
+        bottom: 20px;
+        left: 12px;
+    }
+    .porfolio-content:nth-child(3) {
+        display: none
+     }
+    .profolio-field button{
+        margin:auto;
+        display: block;
+    }
+    .contact-content{
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
+    
+    }
+    .contact-box{
+        width:100px;
+        height: 100px;
+        margin: 0 20px;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    .contact-box:hover{
+        transform: scale(1.3);
+    }
+    .contact-box img{
+        width: 100%;
+    }
+    footer img{
+        width: 50%;
+    }
+    footer div {
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto
+    }
+    }
